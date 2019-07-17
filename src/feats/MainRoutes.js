@@ -11,7 +11,7 @@ const MainRoutes = () => {
       <Route exact path="/" component={Home} />
       <Route path="/Gallery" component={Gallery} />
       <Route path="/Gallery/:one" component={Single} />
-      <Route Component={Err} />
+      <Route component={Err} />
     </Switch>
   );
 };
