@@ -7,14 +7,12 @@ import Single from "./Single";
 
 const MainRoutes = () => {
   return (
-    <div>
-      <Switch>
-        <Route exact path="/" Component={Home} />
-        <Route exact path="/Gallery" Component={Gallery} />
-        <Route exact path="/Gallery/:one" Component={Single} />
-        <Route Component={Err} />
-      </Switch>
-    </div>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route path="/Gallery" component={Gallery} />
+      <Route path="/Gallery/:one" component={Single} />
+      <Route Component={Err} />
+    </Switch>
   );
 };
 

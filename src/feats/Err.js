@@ -5,7 +5,6 @@ function Err() {
         <div>
            <h1>Error mazee</h1> 
         </div>
-    )
+    );
 }
- 
 export default Err;
