@@ -1,11 +1,8 @@
 import React from 'react';
+import Hero from '../components/Hero';
 
 const Home = () => {
-    return (
-        <div>
-            <h1>We home mazee</h1>
-        </div>
-    )
+    return <Hero hero="defaultHero" />;
 }
 
 export default Home;

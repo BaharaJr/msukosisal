@@ -96,10 +96,11 @@ h6 {
   padding: 0.75rem 2rem;
   background: var(--offWhite);
   z-index: 1;
+  align-items: right;
 }
 .nav-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
 }
 .nav-btn {
   background: transparent;
@@ -133,7 +134,7 @@ h6 {
 }
 
 .show-nav {
-  height: 100px;
+  height: 0%;
 }
 @media screen and (min-width: 768px) {
   .nav-btn {
@@ -157,15 +158,15 @@ h6 {
 /* end of navbar */
 /* Hero */
 .defaultHero,
-.roomsHero {
+.galleryHero {
   min-height: calc(100vh - 66px);
   background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.roomsHero {
-  background-image: url("./images/room-2.jpeg");
+.galleryHero {
+  background-image: url("./images/product-1.JPG");
   min-height: 60vh;
 }
 /* End of Hero */

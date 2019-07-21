@@ -1,10 +1,7 @@
-import React from 'react'
+import React from 'react';
+import Hero from '../components/Hero';
 
 function Gallery() {
-    return (
-        <div>
-           <h1>Yooh</h1> 
-        </div>
-    )
+    return <Hero hero="galleryHero" />;
 }
 export default Gallery;
