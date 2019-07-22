@@ -1,10 +1,7 @@
 import React from 'react'
+import Hero from '../components/Hero'
 
 function Err() {
-    return (
-        <div>
-           <h1>Error mazee</h1> 
-        </div>
-    );
+    return <Hero />;
 }
 export default Err;
