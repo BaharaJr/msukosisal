@@ -5,11 +5,11 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router } from "react-router-dom";
 import { ProductProvider } from "./Context";
 ReactDOM.render(
-  <ProductProvider>
+    <ProductProvider>
     <Router>
       <App />
     </Router>
-  </ProductProvider>,
+    </ProductProvider>,
   document.getElementById("root")
 );
 

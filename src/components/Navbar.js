@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../images/logo.png";
-import { FaAlignRight } from "react-icons/fa";
+import { FaAlignRight, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -18,6 +18,7 @@ class Navbar extends Component {
           <div className="nav-header">
             <Link to="/">
               <img src={logo} alt="Msuko Sisal" width="40" height="40" />
+              <span className="msuko">Msuko Sisal</span>
             </Link>
             <button
               type="button"
@@ -33,7 +34,7 @@ class Navbar extends Component {
             <li>
               <Link to="/">Home</Link>
             </li>
-            <li> 
+            <li>
               <Link to="/Gallery">Products</Link>
             </li>
             <li>
@@ -42,6 +43,26 @@ class Navbar extends Component {
             <li>
               <Link to="/">Contact</Link>
             </li>
+            <li className="icons">
+              <a href="tel:+25571177224">
+                <FaPhone className="nav-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="https://wa.me/+25571177224">
+                <FaWhatsapp className="nav-icon" />
+              </a>
+            </li>
+            {/* <li>
+              <a href="tel:+25571177224">
+                <FaPhone className="nav-icon" />
+              </a>
+            </li>
+            <li>
+              <a href="tel:+25571177224">
+                <FaPhone className="nav-icon" />
+              </a>
+            </li> */}
           </ul>
         </div>
       </nav>
