@@ -15,7 +15,7 @@ class FeaturedProducts extends Component {
             <section className="featured-products">
                 <Title title="hot proucts" />
                 <div className="featured-products-center">
-                    {loading?<Loading />:products}
+                    {loading? <Loading /> : products}
                 </div>
             </section>
         );
