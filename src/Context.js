@@ -11,13 +11,14 @@ class ProductProvider extends Component {
     };
     componentDidMount() {
         let products = this.formatData(items)
-        let featuredProducts = products.filter(product => product.feature === true);
+        let featuredProducts = products.filter(product => 
+            product.featured === true);
         this.setState({
             products,
             featuredProducts,
             sortedProducts: products,
-            loading: true
-        })
+            loading: false
+        });
     }
     formatData(items){
         let tempItems = items.map(item =>{
@@ -26,14 +27,13 @@ class ProductProvider extends Component {
             let product = {...item.fields,images,id}
             return product;
             }
-
         );
         return tempItems;
     }
     render() {
 
         return (
-            <ProductContext.Provider value={"hello world"}>
+            <ProductContext.Provider value={{...this.state}}>
                 {this.props.children}
             </ProductContext.Provider>
         );
