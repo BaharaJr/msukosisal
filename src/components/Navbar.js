@@ -44,12 +44,12 @@ class Navbar extends Component {
               <Link to="/">Contact</Link>
             </li>
             <li className="icons">
-              <a href="tel:+25571177224">
+              <a href="tel:+255711770224">
                 <FaPhone className="nav-icon" />
               </a>
             </li>
             <li>
-              <a href="https://wa.me/+25571177224">
+              <a href="https://wa.me/+255711770224">
                 <FaWhatsapp className="nav-icon" />
               </a>
             </li>
