@@ -528,8 +528,9 @@ h6 {
 
 .msuko {
   color: var(--mainBlack);
-  font-size: 1rem;
+  font-size: 0.62rem;
   font-weight: 600;
+  padding-left: 5px;
 }
 
 a {

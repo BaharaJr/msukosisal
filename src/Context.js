@@ -16,7 +16,7 @@ class ProductProvider extends Component {
             products,
             featuredProducts,
             sortedProducts: products,
-            loading: false
+            loading: true
         })
     }
     formatData(items){
