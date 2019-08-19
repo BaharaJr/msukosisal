@@ -1,6 +1,7 @@
 import React from "react";
 import MainRoutes from "./feats/MainRoutes";
 import Navbar from "./components/Navbar";
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div>
         <Navbar />
         <MainRoutes />
+        <Footer />
       </div>
     </div>
   );
