@@ -49,7 +49,7 @@ class Navbar extends Component {
               </a>
             </li>
             <li>
-              <a href="https://wa.me/+255711770224">
+              <a href="https://wa.me/255711770224?text=Welcome%20to%20Msuko Sisal.%20How%20may%20we%20help?%20">
                 <FaWhatsapp className="nav-icon" />
               </a>
             </li>
