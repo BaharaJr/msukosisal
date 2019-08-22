@@ -1,7 +1,6 @@
 ---
+__[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://msukosisal.herokuapp.com)__
 __Msuko Sisal__
-
-__[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://msukosisal.herokuapp.com)
 
 - __[website](msukosisal.co.tz)__.
 
