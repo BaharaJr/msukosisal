@@ -638,13 +638,13 @@ export default [
       id: "12"
     },
     fields: {
-      name: "Laundry Basket",
-      slug: "laundry-basket",
+      name: "Grocery Pot",
+      slug: "groceries",
       price: 250000,
       size: 700,
       featured: true,
       description:
-      "Laundry Baskets, carefully curated to fit your demands and needs. Lorem ipsum dolor sit amet, consectetur aLoremdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Grocery Pots, carefully curated to fit your demands and needs. Lorem ipsum dolor sit amet, consectetur aLoremdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       extras: [
         " Lorem ipsum dolor sit amet, consectetur aLoremdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
