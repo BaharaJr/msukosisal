@@ -2,6 +2,7 @@
   "name": "msukosisal",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://msukosisal.herokuapp.com/",
   "dependencies": {
     "@types/react": "^16.9.1",
     "react": "^16.8.6",
