@@ -381,6 +381,7 @@ h6 {
 }
 .single-product-images {
   width: 80vw;
+  height: 10vh;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -396,6 +397,7 @@ h6 {
   display: grid;
   grid-template-columns: 1fr;
   margin: 2rem auto;
+  margin-top: 45rem;
 }
 .desc,
 .info {
@@ -443,6 +445,7 @@ h6 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
+    margin-top: 15rem;
   }
   .info {
     padding-left: 3rem;
