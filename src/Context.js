@@ -24,16 +24,21 @@ class ProductProvider extends Component {
         let tempItems = items.map(item =>{
             let id = item.sys.id
             let images = item.fields.images.map(image =>image.fields.file.url)
-            let product = {...item.fields,images,id}
+            let product = {...item.fields,images,id} 
             return product;
             }
         );
         return tempItems;
     }
+    getProduct = (slug) =>{
+        let tempProducts = [...this.state.products];
+        const product = tempProducts.find(product => product.slug === slug)
+        return product;
+    }
     render() {
 
         return (
-            <ProductContext.Provider value={{...this.state}}>
+            <ProductContext.Provider value={{...this.state, getProduct:this.getProduct}}>
                 {this.props.children}
             </ProductContext.Provider>
         );
