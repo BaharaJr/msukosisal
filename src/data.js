@@ -425,8 +425,7 @@ export default [
       price: 40000,
       size: 500,
       featured: true,
-      description:
-        "Street art doormats.",
+      description: "Street art doormats.",
       extras: [
         " ipsum dolor sit amet, consectetur aLoremdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       ],
@@ -641,14 +640,9 @@ export default [
       name: "Grocery Pot",
       slug: "groceries",
       price: 250000,
-      size: 700,
       featured: true,
       description:
-      "Grocery Pots, carefully curated to fit your demands and needs. Lorem ipsum dolor sit amet, consectetur aLoremdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      extras: [
-        " Lorem ipsum dolor sit amet, consectetur aLoremdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-
-      ],
+        "Grocery Pots, carefully curated to fit your demands and needs. Lorem ipsum dolor sit amet, consectetur aLoremdipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       images: [
         {
           fields: {
