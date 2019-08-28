@@ -378,6 +378,7 @@ h6 {
 
 .single-product {
   padding: 5rem 0 0 0;
+  overflow-x: hidden;
 }
 .single-product-images {
   width: 80vw;
@@ -398,6 +399,7 @@ h6 {
   grid-template-columns: 1fr;
   margin: 2rem auto;
   margin-top: 45rem;
+  overflow-x: hidden;
 }
 .desc,
 .info {
@@ -463,17 +465,20 @@ h6 {
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 30px;
+  overflow-x: hidden;
 }
 
 @media screen and (min-width: 776px) {
   .productslist-center {
     width: 90vw;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 992px) {
   .productslist-center {
     width: 95vw;
     max-width: 1170px;
+    overflow-x: hidden;
   }
 }
 /* end of productlist */
@@ -520,12 +525,14 @@ h6 {
 @media screen and (min-width: 776px) {
   .filter-form {
     width: 70vw;
+    overflow-x: hidden;
   }
 }
 @media screen and (min-width: 992px) {
   .filter-form {
     width: 95vw;
     max-width: 1170px;
+    overflow-x: hidden;
   }
 }
 /* end of products fitler*/
