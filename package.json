@@ -5,6 +5,7 @@
   "homepage": "https://msukosisal.herokuapp.com/",
   "dependencies": {
     "@types/react": "^16.9.1",
+    "contentful": "^7.9.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-icons": "^3.7.0",
