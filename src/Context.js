@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import items from "./data";
+import Client from "./Contentful";
 
 const ProductContext = React.createContext();
 class ProductProvider extends Component {
@@ -13,21 +13,34 @@ class ProductProvider extends Component {
     maxPrice: 0,
     minPrice: 0
   };
-  componentDidMount() {
-    let products = this.formatData(items);
-    let featuredProducts = products.filter(
-      product => product.featured === true
-    );
 
-    let maxPrice = Math.max(...products.map(item => item.price));
-    this.setState({
-      products,
-      featuredProducts,
-      sortedProducts: products,
-      loading: false,
-      price: maxPrice,
-      maxPrice
-    });
+  //getdata
+  getData = async () => {
+    try {
+      let response = await Client.getEntries({
+        content_type: "msukosisal",
+        order: "fields.price"
+      });
+      let products = this.formatData(response.items);
+      let featuredProducts = products.filter(
+        product => product.featured === true
+      );
+
+      let maxPrice = Math.max(...products.map(item => item.price));
+      this.setState({
+        products,
+        featuredProducts,
+        sortedProducts: products,
+        loading: false,
+        price: maxPrice,
+        maxPrice
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  componentDidMount() {
+    this.getData();
   }
   formatData(items) {
     let tempItems = items.map(item => {
@@ -45,14 +58,40 @@ class ProductProvider extends Component {
   };
 
   handleChange = event => {
-    const type = event.target.type;
-    const value = event.target.value;
+    const target = event.target;
+    const value = event.type === "checkbox" ? target.checked : target.value;
     const name = event.target.name;
-    console.log(type, name, value);
+    this.setState(
+      {
+        [name]: value
+      },
+      this.filterProducts
+    );
   };
 
   filterProducts = () => {
-    console.log("yooh");
+    let { products, type, price } = this.state;
+
+    //filter products
+    let tempProducts = [...products];
+
+    //transform value
+    price = parseInt(price);
+
+    //filter by price
+    tempProducts = tempProducts.filter(product => product.price <= price);
+
+    //change state
+    this.setState({
+      sortedProducts: tempProducts
+    });
+
+    if (type !== "all") {
+      tempProducts = tempProducts.filter(product => product.type === type);
+      this.setState({
+        sortedProducts: tempProducts
+      });
+    }
   };
   render() {
     return (
