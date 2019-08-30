@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import defaultBcg from "../images/product-9.jpeg";
-// eslint-disable-next-line
-import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../Context";

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import logo from "../images/logo.png";
-import { FaAlignRight, FaPhone, FaWhatsapp } from "react-icons/fa";
+import { FaAlignRight, FaPhone, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../App.css";
 
@@ -43,7 +43,13 @@ class Navbar extends Component {
             <li>
               <Link to="/">Contact</Link>
             </li>
-            <li className="icons">
+            <div className="icons">
+            <li>
+              <a href="mailto:info@msukosisal.co.tz">
+                <FaEnvelope className="nav-icon" />
+              </a>
+            </li>
+            <li>
               <a href="tel:+255711770224">
                 <FaPhone className="nav-icon" />
               </a>
@@ -53,6 +59,7 @@ class Navbar extends Component {
                 <FaWhatsapp className="nav-icon" />
               </a>
             </li>
+            </div>
             {/* <li>
               <a href="tel:+25571177224">
                 <FaPhone className="nav-icon" />

@@ -11,7 +11,7 @@ function Product({ product }) {
         <img src={images[0] || defaultImg} alt="product" />
         <div className="price-top">
           <h6>Tshs{price}</h6>
-          <p>On Sale</p>
+          <p>Per piece</p>
         </div>
         <Link to={`/products/${slug}`} className="btn-primary product-link">
           View
