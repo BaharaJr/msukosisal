@@ -21,7 +21,7 @@ function Footer() {
             </li>
             <li>
               <span className="icon fa-map-marker"></span> Kimamba, Kilosa
-              Morogor, Tanzania
+              Morogoro, Tanzania
             </li>
             <li>
               <span className="icon fa-facebook socials"></span>
