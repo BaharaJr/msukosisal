@@ -1,6 +1,7 @@
 ---
-__[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://msukosisal.herokuapp.com)__
 __Msuko Sisal__
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0e291b89-ff06-455b-8273-acb9c46a79a9/deploy-status)](https://app.netlify.com/sites/msukosisal/deploys)
 
 - __[website](msukosisal.co.tz)__.
 
