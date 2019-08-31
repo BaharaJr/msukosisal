@@ -5,17 +5,11 @@ export default function HomeHero() {
   return (
     <>
       <div className="hero-section">
-        <div className="tagline">
-          <p>
-            Useful sisal products to stimulate <br />
-            your home, beauty and <br />
-            appearance.
-          </p>
-          </div>
-
-        <div className="hero-image">
-          <img src={HeroImg} alt="" width="400px" />
-        </div>
+        <p className="tagline">
+          Useful sisal products to stimulate
+          your <br /> home, beauty and appearance.
+        </p>
+        <img src={HeroImg} alt="" className="hero-image" />
       </div>
     </>
   );

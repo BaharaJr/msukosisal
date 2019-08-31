@@ -38,10 +38,10 @@ class Navbar extends Component {
               <Link to="/Gallery">Products</Link>
             </li>
             <li>
-              <Link to="/">About Us</Link>
+              <Link to="/About">About Us</Link>
             </li>
             <li>
-              <Link to="/">Contact</Link>
+              < a href="/#footer"> Contanct </ a>
             </li>
             <div className="icons">
             <li>
