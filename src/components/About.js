@@ -16,10 +16,6 @@ export default function About() {
           items from Sisal Fibre.
         </p>
       </div>
-      <div className="about-img">
-        <img src={AboutImg} alt="" />
-        <img src={AboutImg3} alt="" />
-      </div>
       <div className="about-div">
         <p className="about">
           All the products are best made and sort to give you the best look on
@@ -27,10 +23,6 @@ export default function About() {
           all these we aim at preserving the environment by using environmental
           friendly products.
         </p>
-      </div>
-      <div className="about-img">
-        <img src={AboutImg4} alt="" />
-        <img src={AboutImg2} alt="" />
       </div>
     </>
   );
