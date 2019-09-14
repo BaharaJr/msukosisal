@@ -6,8 +6,7 @@ export default function HomeHero() {
     <>
       <div className="hero-section">
         <p className="tagline">
-          Useful sisal products to stimulate
-          your <br /> home, beauty and appearance.
+          Handmade Sisal decor for any space around. 
         </p>
         <img src={HeroImg} alt="" className="hero-image" />
       </div>
