@@ -1,9 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
 
-* {
+
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 :root {
   --primaryColor: #af9a7d;
@@ -22,7 +31,7 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: TimesNewRoman, "Times New Roman", Times, Serif;
   line-height: 1.4;
 }
 h1 {
@@ -590,6 +599,7 @@ a {
   font-size: 24px;
   font-weight: 700;
   display: flex;
+  font-style: italic;
 }
 
 .hor-img {
@@ -665,7 +675,6 @@ a {
 .about {
   margin-left: 15%;
   margin-right: 15%;
-  font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   font-size: 25px;
   margin-bottom: 40px;

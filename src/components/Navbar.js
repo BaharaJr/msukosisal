@@ -41,7 +41,7 @@ class Navbar extends Component {
               <Link to="/About">About Us</Link>
             </li>
             <li>
-              < a href="/#footer"> Contanct </ a>
+              < a href="/#footer"> Contact </ a>
             </li>
             <div className="icons">
             <li>
